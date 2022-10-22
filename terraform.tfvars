@@ -27,31 +27,31 @@ default_nodepool_vm_type   = "n2-standard-2"
 cluster_node_pool_mode = "minimal"
 node_pools = {
   cas = {
-    "vm_type"              = "n2-highmem-4"
-    "os_disk_size"         = 200
-    "min_nodes"            = 0
-    "max_nodes"            = 5
-    "node_taints"          = ["workload.sas.com/class=cas:NoSchedule"]
+    "vm_type"      = "n2-highmem-4"
+    "os_disk_size" = 200
+    "min_nodes"    = 0
+    "max_nodes"    = 5
+    "node_taints"  = ["workload.sas.com/class=cas:NoSchedule"]
     "node_labels" = {
       "workload.sas.com/class" = "cas"
     }
-    "local_ssd_count"      = 0
-    "accelerator_count"    = 0
-    "accelerator_type"     = ""
+    "local_ssd_count"   = 0
+    "accelerator_count" = 0
+    "accelerator_type"  = ""
   },
   generic = {
-    "vm_type"              = "n2-standard-8"
-    "os_disk_size"         = 200
-    "min_nodes"            = 0
-    "max_nodes"            = 5
-    "node_taints"          = []
+    "vm_type"      = "n2-standard-8"
+    "os_disk_size" = 200
+    "min_nodes"    = 0
+    "max_nodes"    = 5
+    "node_taints"  = []
     "node_labels" = {
       "workload.sas.com/class"        = "compute"
       "launcher.sas.com/prepullImage" = "sas-programming-environment"
     }
-    "local_ssd_count"      = 0
-    "accelerator_count"    = 0
-    "accelerator_type"     = ""
+    "local_ssd_count"   = 0
+    "accelerator_count" = 0
+    "accelerator_type"  = ""
   }
 }
 
@@ -88,7 +88,7 @@ postgres_servers = {
 # For a list of the CIDRs of other SAS networks, see http://mom.unx.sas.com/net/InetAddrs.html
 
 # **************  RECOMMENDED  VARIABLES  ***************
-default_public_access_cidrs = [ "0.0.0.0/0",
+default_public_access_cidrs = ["0.0.0.0/0",
   # "149.173.0.0/16", "194.206.69.176/28", "109.232.56.224/27", "62.255.11.0/29",
   # "88.202.174.192/29", "137.221.139.0/24", "212.103.250.112/29", "88.151.216.240/29",
   # "121.244.109.0/24", "125.21.192.0/29", "121.243.77.24/29", "106.120.85.32/28",
