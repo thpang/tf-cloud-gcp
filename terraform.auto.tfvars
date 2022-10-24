@@ -8,7 +8,7 @@ prefix                  = "thpang-dev"
 location                = "us-east1-b" # e.g., "us-east1-b"
 project                 = "rdorgasub5"
 service_account_keyfile = "~/.google/devops-svc-account-admin.json"
-# ssh_public_key          = "~/.ssh/id_rsa.pub"
+ssh_public_key          = "~/.ssh/id_rsa.pub"
 # Tags for cloud resources
 # Note, when 'resourceowner' tag is not provided, SAS IT monitoring process will add later, that could create differences with your local Terraform state
 tags = {
@@ -88,7 +88,7 @@ postgres_servers = {
 # For a list of the CIDRs of other SAS networks, see http://mom.unx.sas.com/net/InetAddrs.html
 
 # **************  RECOMMENDED  VARIABLES  ***************
-default_public_access_cidrs = ["149.173.0.0/16", "75.2.98.97/32", "99.83.150.238/32", "10.19.1.23/32",
+default_public_access_cidrs = ["0.0.0.0/0",
   # "149.173.0.0/16", "194.206.69.176/28", "109.232.56.224/27", "62.255.11.0/29",
   # "88.202.174.192/29", "137.221.139.0/24", "212.103.250.112/29", "88.151.216.240/29",
   # "121.244.109.0/24", "125.21.192.0/29", "121.243.77.24/29", "106.120.85.32/28",
