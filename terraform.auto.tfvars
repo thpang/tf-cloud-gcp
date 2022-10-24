@@ -8,7 +8,7 @@ prefix                  = "thpang-dev"
 location                = "us-east1-b" # e.g., "us-east1-b"
 project                 = "rdorgasub5"
 service_account_keyfile = "~/.google/devops-svc-account-admin.json"
-ssh_public_key          = "~/.ssh/id_rsa.pub"
+# ssh_public_key          = "~/.ssh/id_rsa.pub"
 # Tags for cloud resources
 # Note, when 'resourceowner' tag is not provided, SAS IT monitoring process will add later, that could create differences with your local Terraform state
 tags = {
