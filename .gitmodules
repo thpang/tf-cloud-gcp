@@ -1,4 +1,4 @@
 [submodule "public"]
 	path = public
 	url = https://github.com/sassoftware/viya4-iac-gcp.git
-        branch = tf_cloud
+    branch = tf_cloud
