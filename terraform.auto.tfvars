@@ -87,12 +87,9 @@ postgres_servers = {
 # Use the IP reported in https://ifconfig.me/ and append "/32", e.g. 1.2.3.4/32
 # For a list of the CIDRs of other SAS networks, see http://mom.unx.sas.com/net/InetAddrs.html
 #
-# !NOTE! - When running this code in Terraform Cloud you need to have an account type
-#          of Terraform Cloud - Business Plan this is needed to enable the
-#          Terraform Cloud Agents which are specific to your organization. This should
-#          allow you to set the access_cidrs in this code correctly.
-#          ALL other Terraform Cloud plans must set your access_cidrs to ["0.0.0.0/0"]
-#          in order to work.
+# !NOTE! - When using Terraform Cloud you must set your access_cidrs to ["0.0.0.0/0"]
+#          in order to work. They do not publish their 'helper' agent IPs or assign those
+#          per account so no way to predict those values when setting up access CIDRs.
 
 # **************  RECOMMENDED  VARIABLES  ***************
 default_public_access_cidrs = [
