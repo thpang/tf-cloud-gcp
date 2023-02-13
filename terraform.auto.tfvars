@@ -4,8 +4,8 @@
 
 # ****************  REQUIRED VARIABLES  ****************
 # These required variables' values MUST be provided by the User
-# prefix                  = "thpang-prid-tfe"
-# location                = "us-east1-b" # e.g., "us-east1-b"
+prefix                  = "thpang-prid-tfe"
+location                = "us-east1-b" # e.g., "us-east1-b"
 # project                 = "rdorgasub5"
 # service_account_keyfile = "~/.google/devops-svc-account-admin.json"
 # ssh_public_key          = "~/.ssh/id_rsa.pub"
